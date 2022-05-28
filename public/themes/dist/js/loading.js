@@ -727,7 +727,7 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap requires jQuery"); 
                 var j = "affix" + (i ? "-" + i : ""),
                     k = a.Event(j + ".bs.affix");
                 this.$element.trigger(k), k.isDefaultPrevented() || (this.affixed = i, this.unpin = "bottom" == i ? this.getPinnedOffset() : null, this.$element.removeClass(b.RESET).addClass(j).trigger(a.Event(j.replace("affix", "affixed"))), "bottom" == i && this.$element.offset({
-                    top: c - h - this.$element.height()
+                    top: c - h - this.$element.height() 
                 }))
             }
         }
